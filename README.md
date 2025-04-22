@@ -1,6 +1,6 @@
 # S-Curve Motion Profile for VEX V5
 
-This project implements an  **S-Curve Motion Profile** in **VEXcode V5 Blocks** to enable smooth, accurate, and dynamically-scaled robot movement in autonomous mode.
+This project implements an  **S-Curve Motion Profile** in **VEXcode V5 Blocks** for smoother, more accurate, and scaled robot movement in autonomous mode.
 
 ## 📌 Features
 
@@ -8,7 +8,7 @@ This project implements an  **S-Curve Motion Profile** in **VEXcode V5 Blocks** 
   Automatically splits motion into acceleration, cruise, deceleration, and a final constant-speed phase based on travel distance.
 
 - **Exponential Deceleration**  
-  Uses functions for smooth velocity tapering, avoiding jerky stops and improving scoring accuracy.
+  Uses functions to avoid jerky stops and improving accuracy.
 
 - **Adaptive Velocity Control**  
   Adjusts `TopSpeed` and `MinVelocity` according to the input distance. Shorter paths move slower and avoid full speed ramp-up.
@@ -19,7 +19,7 @@ This project implements an  **S-Curve Motion Profile** in **VEXcode V5 Blocks** 
   - `MoveS_CurveExp`: Executes motion with intake option
 
 - **Precision Tuning**  
-  Final few inches are covered at a set `MinVelocity` (10%–20%), ensuring consistent stops and alignment.
+  Final few inches are covered at a set `MinVelocity` for consistent stops and alignment.
 
 - **Direction Control + Intake Support**  
   Backward movement and optional intake.
